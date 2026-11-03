@@ -8,8 +8,19 @@ tokenflow start
 tokenflow stop
 ```
 
-v0.2.0 预发布改用 TS + Bun 独立程序：按 Mac 架构下载一个预编译包，
+v0.2.1 预发布使用 TS + Bun 独立程序：按 Mac 架构下载一个预编译包，
 无需安装 Python、Node.js 或 Bun，不在本机编译。升级或卸载前先执行 `tokenflow stop`。
+本版本修复首 Token 延迟等耗时字段保存小数毫秒时无法启动的问题，不修改 Copilot 数据库。
+
+已安装用户手动更新：
+
+```bash
+tokenflow stop
+brew update
+brew upgrade wenjun-xu/tap/tokenflow
+tokenflow --version
+tokenflow start
+```
 
 需要 macOS 14+ 及可验证的 sandbox-exec 文件写入隔离。Apple Silicon 和 Rosetta 下的
 x64 程序已在本机合成数据验收；原生 Intel Mac 及其他 macOS 版本仍待验收。
