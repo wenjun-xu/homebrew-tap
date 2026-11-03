@@ -2,18 +2,18 @@
 class Tokenflow < Formula
   desc "Local, read-only GitHub Copilot CLI token usage dashboard"
   homepage "https://github.com/wenjun-xu/TokenFlow"
-  version "0.2.0"
+  version "0.2.1"
 
   depends_on macos: :sonoma
 
   on_arm do
-    url "https://github.com/wenjun-xu/TokenFlow/releases/download/v0.2.0/tokenflow-0.2.0-darwin-arm64.tar.gz"
-    sha256 "dee42dbba03e8387e76e46a0a3305ef9053c22990b6d13e5f1fe2836145e88ca"
+    url "https://github.com/wenjun-xu/TokenFlow/releases/download/v0.2.1/tokenflow-0.2.1-darwin-arm64.tar.gz"
+    sha256 "8f2475db31afb5cbd871cad1262abf12a754d5ed0975605d654fccea9841250d"
   end
 
   on_intel do
-    url "https://github.com/wenjun-xu/TokenFlow/releases/download/v0.2.0/tokenflow-0.2.0-darwin-x64.tar.gz"
-    sha256 "f01ed3626257d0e86d335f3d209ebe2377de4871ae094effbd5811721e0ef32b"
+    url "https://github.com/wenjun-xu/TokenFlow/releases/download/v0.2.1/tokenflow-0.2.1-darwin-x64.tar.gz"
+    sha256 "2e496c1477270d0ff3aa96214a94a708945561a81a86b924ed81c27b56d44217"
   end
 
   def install
